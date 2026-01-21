@@ -5,7 +5,7 @@
 
     taipo_right_layout: layout {
         compatible = "zmk,physical-layout";
-        label = "Taipo Right Direct";
+        display-name = "Taipo Right Direct";
 
         keys {
             compatible = "zmk,physical-layout-keys";

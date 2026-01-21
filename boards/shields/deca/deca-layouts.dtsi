@@ -1,9 +1,23 @@
 / {
-    deca_layout: physical_layout_0 {
+    deca_layout: layout {
         compatible = "zmk,physical-layout";
-        display-name = "Deca Finger Layout";
+        display-name = "Deca Taipo Layout";
 
-        /* Must reference a real matrix transform node */
-        transform = <&deca_transform>;
+        keys {
+            compatible = "zmk,physical-layout-keys";
+
+            key0 { x = <0>; y = <0>; }; /* i1 */
+            key1 { x = <1>; y = <0>; }; /* m1 */
+            key2 { x = <2>; y = <0>; }; /* r1 */
+            key3 { x = <3>; y = <0>; }; /* p1 */
+
+            key4 { x = <0>; y = <1>; }; /* i2 */
+            key5 { x = <1>; y = <1>; }; /* m2 */
+            key6 { x = <2>; y = <1>; }; /* r2 */
+            key7 { x = <3>; y = <1>; }; /* p2 */
+
+            key8 { x = <3>; y = <2>; }; /* t1 */
+            key9 { x = <4>; y = <2>; }; /* t2 */
+        };
     };
 };

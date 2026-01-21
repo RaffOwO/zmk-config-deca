@@ -1,18 +1,49 @@
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
+
+// CONFIG
+#define COMBO_TIMEOUT 70
+#define COMBO_LAYERS 0
+#define STICKY_TIMEOUT 500
+
+/* ---------------- TOP ROW ---------------- */
+#define TLI 0   /* i1 */
+#define TLM 1   /* m1 */
+#define TLR 2   /* r1 */
+#define TLP 3   /* p1 */
+
+/* --------------- BOTTOM ROW -------------- */
+#define BLI 4   /* i2 */
+#define BLM 5   /* m2 */
+#define BLR 6   /* r2 */
+#define BLP 7   /* p2 */
+
+/* ---------------- THUMBS ----------------- */
+#define LOT 8   /* t1 */
+#define LIT 9   /* t2 */
+
+
+&sk {
+    release-after-ms = <STICKY_TIMEOUT>;
+    quick-release;
+};
 
 / {
-    keymap {
-        compatible = "zmk,keymap";
+  combos {
+    compatible = "zmk,combos";
+    #include "taipo.dtsi"
+  };
 
-        default_layer {
+  keymap {
+    compatible = "zmk,keymap";
+
+    default_layer {
             bindings = <
-                    /* Row 0: i1  m1  r1  p1 */
-                    &kp Q   &kp W   &kp E   &kp R
-                    /* Row 1: i2  m2  r2  p2 */
-                    &kp A   &kp S   &kp D   &kp F
-                /* Thumbs: t1  t2 */
-                &kp SPACE &kp ENTER
+                    &none &none &none &none
+                    &none &none &none &none
+                &none &none
             >;
         };
     };

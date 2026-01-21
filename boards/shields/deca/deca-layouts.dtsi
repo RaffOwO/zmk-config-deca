@@ -10,20 +10,20 @@
         keys {
             compatible = "zmk,physical-layout-keys";
 
-            key0 { x = 0; y = 0; };
-            key1 { x = 0; y = 1; };
+            key0 { x = <0>; y = <0>; };
+            key1 { x = <0>; y = <1>; };
 
-            key2 { x = 1; y = 0; };
-            key3 { x = 1; y = 1; };
+            key2 { x = <1>; y = <0>; };
+            key3 { x = <1>; y = <1>; };
 
-            key4 { x = 2; y = 0; };
-            key5 { x = 2; y = 1; };
+            key4 { x = <2>; y = <0>; };
+            key5 { x = <2>; y = <1>; };
 
-            key6 { x = 3; y = 0; };
-            key7 { x = 3; y = 1; };
+            key6 { x = <3>; y = <0>; };
+            key7 { x = <3>; y = <1>; };
 
-            key8 { x = 4; y = 2; };
-            key9 { x = 5; y = 2; };
+            key8 { x = <4>; y = <2>; };
+            key9 { x = <5>; y = <2>; };
         };
     };
 };

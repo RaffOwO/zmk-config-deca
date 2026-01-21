@@ -1,6 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include <zmk/matrix_transform.dtsi>
-
+#include <zmk/matrix_transform.dtsi>  /* defines &identity_transform */
 
 / {
     chosen {
@@ -10,8 +9,6 @@
     deca_layout: layout {
         compatible = "zmk,physical-layout";
         display-name = "Deca Finger Layout";
-
-        /* REQUIRED: identity transform for gpio-direct */
         transform = <&identity_transform>;
 
         keys {

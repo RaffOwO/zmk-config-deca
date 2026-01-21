@@ -8,7 +8,7 @@
     deca_layout: layout {
         compatible = "zmk,physical-layout";
         display-name = "Deca Finger Layout";
-        transform = <&identity_transform>;
+        transform = <0>;
 
         keys {
             compatible = "zmk,physical-layout-keys";

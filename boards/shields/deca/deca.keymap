@@ -20,6 +20,7 @@
 #define LOT 8   /* t1 */
 #define LIT 9   /* t2 */
 
+#define STICKY_TIMEOUT 500
 
 &sk {
     release-after-ms = <STICKY_TIMEOUT>;

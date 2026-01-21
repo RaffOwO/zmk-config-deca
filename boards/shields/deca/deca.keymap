@@ -9,16 +9,26 @@
 #define TLM 1   /* m1 */
 #define TLR 2   /* r1 */
 #define TLP 3   /* p1 */
+#define TRI 12  /* right i1 */
+#define TRM 13  /* right m1 */
+#define TRR 14  /* right r1 */
+#define TRP 15  /* right p1 */
 
 /* --------------- BOTTOM ROW -------------- */
 #define BLI 4   /* i2 */
 #define BLM 5   /* m2 */
 #define BLR 6   /* r2 */
 #define BLP 7   /* p2 */
+#define BRI 16  /* right i2 */
+#define BRM 17  /* right m2 */
+#define BRR 18  /* right r2 */
+#define BRP 19  /* right p2 */
 
 /* ---------------- THUMBS ----------------- */
 #define LOT 8   /* t1 */
 #define LIT 9   /* t2 */
+#define ROT 10  /* right t1 */
+#define RIT 11  /* right t2 */
 
 #define STICKY_TIMEOUT 500
 

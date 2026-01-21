@@ -3,10 +3,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
-// CONFIG
-#define COMBO_TIMEOUT 70
-#define COMBO_LAYERS 0
-#define STICKY_TIMEOUT 500
 
 /* ---------------- TOP ROW ---------------- */
 #define TLI 0   /* i1 */

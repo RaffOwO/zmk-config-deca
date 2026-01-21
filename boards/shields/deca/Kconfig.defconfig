@@ -1,0 +1,6 @@
+if SHIELD_DECA
+
+config ZMK_KEYBOARD_NAME
+    default "deca"
+
+endif # SHIELD_DECA

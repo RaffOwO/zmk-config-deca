@@ -1,4 +1,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <zmk/matrix_transform.dtsi>
+
 
 / {
     chosen {

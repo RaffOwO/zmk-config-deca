@@ -1,33 +1,9 @@
-#include <dt-bindings/zmk/matrix_transform.h>
-
 / {
-    chosen {
-        zmk,physical-layout = &deca_layout;
-    };
-
-    deca_layout: layout {
+    deca_layout: physical_layout_0 {
         compatible = "zmk,physical-layout";
         display-name = "Deca Finger Layout";
-        transform = <0>;
 
-        keys {
-            compatible = "zmk,physical-layout-keys";
-
-            /* Row 1 */
-            key0 { x = <0>; y = <0>; }; /* p1 */
-            key1 { x = <1>; y = <0>; }; /* r1 */
-            key2 { x = <2>; y = <0>; }; /* m1 */
-            key3 { x = <3>; y = <0>; }; /* i1 */
-
-            /* Row 2 */
-            key4 { x = <0>; y = <1>; }; /* p2 */
-            key5 { x = <1>; y = <1>; }; /* r2 */
-            key6 { x = <2>; y = <1>; }; /* m2 */
-            key7 { x = <3>; y = <1>; }; /* i2 */
-
-            /* Thumbs */
-            key8 { x = <3>; y = <2>; }; /* t2 */
-            key9 { x = <4>; y = <2>; }; /* t1 */
-        };
+        /* Must reference a real matrix transform node */
+        transform = <&deca_transform>;
     };
 };

@@ -1,18 +1,17 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-
 / {
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
-            // p1    r1    m1    i1
-            // p2    r2    m2    i2
-            //             t2    t1
             bindings = <
+                /* Row 0: p1  r1  m1  i1 */
                 &kp Q   &kp W   &kp E   &kp R
+                /* Row 1: p2  r2  m2  i2 */
                 &kp A   &kp S   &kp D   &kp F
+                /* Thumbs: t2  t1 */
                             &kp SPACE &kp ENTER
             >;
         };

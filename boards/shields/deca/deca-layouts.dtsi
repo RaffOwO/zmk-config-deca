@@ -1,11 +1,16 @@
+#include <dt-bindings/zmk/matrix_transform.h>
+
 / {
     chosen {
-        zmk,physical-layout = &taipo_right_layout;
+        zmk,physical-layout = &deca_layout;
     };
 
-    taipo_right_layout: layout {
+    deca_layout: layout {
         compatible = "zmk,physical-layout";
-        display-name = "Taipo Right Direct";
+        display-name = "Deca Finger Layout";
+
+        /* REQUIRED: identity transform for gpio-direct */
+        transform = <&identity_transform>;
 
         keys {
             compatible = "zmk,physical-layout-keys";

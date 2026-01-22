@@ -12,7 +12,7 @@
     deca_transform: matrix_transform {
         compatible = "zmk,matrix-transform";
         rows = <1>;
-        columns = <10>;
+        columns = <20>;
         map = <
             RC(0,4)   RC(0,5)   RC(0,6)   RC(0,7)
             RC(0,12)  RC(0,13)  RC(0,14)  RC(0,15)

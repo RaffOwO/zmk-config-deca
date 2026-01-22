@@ -12,13 +12,6 @@
 // ====================================================
 #define BASE    0
 #define BLE     1
-
-
-// Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
-&lt { quick_tap_ms = <200>; };
-// Sticky Layer Behavior - release sticky behavior after x ms
-&sk { release-after-ms = <1800>; };
-
 // TAIPO DEFINITIONS (use in conjunction with TAIPO COMBOS)
 // ====================================================
 // ZMK forces you to define combos in terms of HW key positions

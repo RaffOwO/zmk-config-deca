@@ -1,83 +1,16 @@
-/*
- * SPDX-License-Identifier: MIT
- */
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-// #include <dt-bindings/zmk/bt.h>
-// #include <dt-bindings/zmk/outputs.h>
 
+/ {
+    keymap {
+        compatible = "zmk,keymap";
 
-// LAYERS
-// ====================================================
-#define BASE    0
-#define BLE     1
-// TAIPO DEFINITIONS (use in conjunction with TAIPO COMBOS)
-// ====================================================
-// ZMK forces you to define combos in terms of HW key positions
-/*
-	.-----------------------------------------------------------.
-	|  0  |  1  |  2  |  3  |           |  4  |  5  |  6  |  7  |
-	|  8  |  9  |  10 |  11 |           |  12 |  13 |  14 |  15 |
-	|-----|-----|  16 |  17 |           |  18 |  19 |-----|-----|
-		        '-----------------------------------'   
-*/
-// {Top,Bottom}{Left,Right}{Index,Middle,Ring,Pinky}
-
-// LEFT SIDE
-#define TLI 3 // TOP
-#define TLM 2 // TOP
-#define TLR 1 // TOP
-#define TLP 0 // TOP
-#define BLI 11 // BOTTOM
-#define BLM 10 // BOTTOM
-#define BLR 9 // BOTTOM
-#define BLP 8 // BOTTOM
-#define LOT 17 // O-THUMB
-#define LIT 16 // I-THUMB
-
-// RIGHT SIDE
-#define TRI 4 // TOP
-#define TRM 5 // TOP
-#define TRR 6 // TOP
-#define TRP 7 // TOP
-#define BRI 12 // BOTTOM
-#define BRM 13 // BOTTOM
-#define BRR 14 // BOTTOM
-#define BRP 15 // BOTTOM
-#define ROT 18 // O-THUMB
-#define RIT 19 // I-THUMB
-
-// KEYMAP
-// ====================================================
-
-/*  0 = Base
-	.-----------------------------------------------------------.
-	|  R  |  S  |  N  |  I  |           |  I  |  N  |  S  |  R  |
-	|  A  |  O  |  T  |  E  |           |  E  |  T  |  O  |  A  |
-	|-----|-----| BKSP| SPC |           | SPC | BKSP|-----|-----|
-		        '-----------------------------------'     
-*/
-	keymap {
-    compatible = "zmk,keymap";
-
-    // LAYER: BASE 0
-    default_layer {
-        label = "Base";
-        bindings = <
-            &kp I       &kp N       &kp S       &kp R
-            &kp E       &kp T       &kp O       &kp A
-            &kp SPACE   &kp BKSP
-        >;
+        default_layer {
+            bindings = <
+                    &kp I       &kp N       &kp S       &kp R
+                    &kp E       &kp T       &kp O       &kp A
+                &kp SPACE   &kp BKSP
+            >;
+        };
     };
-
-    // LAYER: BLE 1
-    ble_layer {
-        label = "BLE";
-        bindings = <
-            &kp I       &kp N       &kp S       &kp R
-            &kp E       &kp T       &kp O       &kp A
-            &kp SPACE   &kp BKSP
-        >;
-    };
-  };
+};
